@@ -7,7 +7,7 @@ root.resizable(0,0)
 root.geometry("450x250")
 
 # Configuración pantalla de salida 
-pantalla = Entry(root, width=40, bg="black", fg="white", borderwidth=0, font=("arial", 18, "bold"))
+pantalla = Entry(root, width=22, bg="black", fg="white", borderwidth=0, font=("arial", 18, "bold"))
 pantalla.grid(row=0, column=0, columnspan=5, padx=1, pady=1)
 
 # Configuración botones
