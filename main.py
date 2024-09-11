@@ -1,10 +1,13 @@
 from tkinter import Tk, Button, Entry
 
+def Ok():
+    pantalla.config(text="Click en botón OK")
+
 # Configuración ventana principal
 root = Tk()
 root.title("Calculadora POO")
 root.resizable(0,0)
-root.geometry("450x250")
+root.geometry("300x250")
 
 # Configuración pantalla de salida 
 pantalla = Entry(root, width=22, bg="black", fg="white", borderwidth=0, font=("arial", 18, "bold"))
@@ -26,7 +29,5 @@ boton_mas = Button(root, text="+", width=9, height=3, bg="deep sky blue", fg="bl
 boton_menos = Button(root, text="-", width=9, height=3, bg="deep sky blue", fg="black", borderwidth=0, cursor="hand2").grid(row=2, column=3, padx=1, pady=1)
 boton_multiplicacion = Button(root, text="*",  width=9, height=3, bg="deep sky blue", fg="black", borderwidth=0, cursor="hand2").grid(row=3, column=3, padx=1, pady=1)
 boton_division = Button(root, text="/", width=9, height=3, bg="deep sky blue", fg="black", borderwidth=0, cursor="hand2").grid(row=4, column=3, padx=1, pady=1)
-
-
 
 root.mainloop()
